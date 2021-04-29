@@ -5,6 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
+    public Sound s;
+    public float musicVolume = 1f;
 
     void Awake()
     {
@@ -18,7 +20,7 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
-    
+
     public void Play (string name)
     {
         Sound s =Array.Find(sounds, sound => sound.name == name);

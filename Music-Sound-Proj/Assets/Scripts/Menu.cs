@@ -50,4 +50,9 @@ public class Menu : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Monster");
     }
 
+    public void UpdateMusicVolume()
+    {
+        
+    }
+
 }
